@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Credit Rescue</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f5c4d"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon-192.png"></head>
+<body>
+<header><div class="nav">
+<a class="logo" href="#top">Credit Rescue</a>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="existing-clients.html">Existing clients</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="contact.html">Free assessment</a>
+</div></header>
+
+<main id="top">
+<section>
+<div class="wrap hero">
+<div>
+<h1>Take back control of your debt</h1>
+<p class="lead">If you are over-indebted, behind on repayments, or worried about your credit record, we help you find a practical debt solution. The assessment is free, confidential and carries no obligation.</p>
+<p><a class="btn" href="#assess">Request a free assessment</a></p>
+</div>
+<div class="est" role="group" aria-labelledby="est-h">
+<h2 id="est-h" style="font-size:1.3rem">Estimate your monthly relief</h2>
+<label for="pay">Monthly debt repayments <output id="payOut">R10 000</output></label>
+<input id="pay" type="range" min="1000" max="50000" step="500" value="10000">
+<label for="acc">Accounts you repay <output id="accOut">4</output></label>
+<input id="acc" type="range" min="1" max="15" step="1" value="4">
+<div class="out" aria-live="polite">Estimated monthly relief<strong id="relief">R5 000</strong><span style="font-size:.9rem;color:var(--muted)">Based on a possible reduction of up to 50% of current repayments.</span></div>
+<p class="fine">Indication only. Not financial advice or a guaranteed outcome. A consultant assesses your full situation first.</p>
+</div>
+</div>
+<div class="wrap" style="margin-top:56px"><div class="trust">
+<div><h3>Registered credit professionals</h3><p>NCR reg. no. [add your number]. Replace with your real registration details.</p></div>
+<div><h3>Confidential</h3><p>Your details are used only to respond to your request.</p></div>
+<div><h3>No assessment fee</h3><p>Understand your options before you commit to anything.</p></div>
+</div></div>
+</section>
+
+<section id="story" style="padding-top:0">
+<div class="wrap">
+<h2>Feeling the weight of debt? You are not alone</h2>
+<div class="vid" id="vid" role="group" aria-label="Short animated story about getting debt help">
+<div class="vid-stage" id="vStage" aria-live="polite">
+<div class="vid-art" id="vArt" aria-hidden="true"></div>
+<p class="vid-cap" id="vCap"></p>
+</div>
+<div class="vid-bar"><button class="btn" id="vBtn" type="button">Play story</button><div class="vid-track" aria-hidden="true"><div id="vFill"></div></div><span id="vCount" class="fine" style="margin:0">0/5</span></div>
+</div>
+<p class="fine">Illustrative story only. Results differ for every person and depend on your circumstances and creditor agreements.</p>
+</div>
+</section>
+
+<section id="solutions" style="padding-top:0">
+<div class="wrap">
+<h2>Two ways to restructure your debt</h2>
+<div class="two">
+<article class="panel">
+<h3>Debt mediation</h3>
+<p>An informal option to manage unsecured debt more affordably while protecting your creditworthiness.</p>
+<ul><li>Informal restructuring of eligible unsecured debt</li><li>Monthly instalments potentially reduced by up to 50%</li><li>Payments distributed through a group of attorneys</li><li>Home loans and vehicle finance are not included</li><li>You may stop once your budget is satisfied</li></ul>
+<p class="fine">Eligibility and outcomes depend on your circumstances and creditor agreements.</p>
+<a class="btn alt" href="#assess">Ask about debt mediation</a>
+</article>
+<article class="panel">
+<h3>Debt review</h3>
+<p>A formal restructuring process under the National Credit Act for consumers who are, or are at risk of becoming, over-indebted.</p>
+<ul><li>One structured repayment plan for included accounts</li><li>Confirmed by a court or the National Consumer Tribunal</li><li>Protection for eligible assets such as a home, vehicle and furniture</li><li>No limit on the amount of debt considered</li></ul>
+<div class="note">Your credit profile will show that you are under debt review, you generally cannot take new credit, all eligible accounts must be included, and the repayment period may be longer.</div>
+<a class="btn alt" href="#assess">Ask about debt review</a>
+</article>
+</div>
+</div>
+</section>
+
+<section id="qualify" style="background:var(--surface);border-block:1px solid var(--line)">
+<div class="wrap">
+<h2>Who may qualify?</h2>
+<p>These are the initial checks. A consultant confirms your eligibility during your free assessment.</p>
+<ul class="checks">
+<li>You are a South African resident.</li>
+<li>You are not under sequestration, bankruptcy or administration.</li>
+<li>Your financial situation can be assessed by a debt counsellor.</li>
+</ul>
+<p><a class="btn" href="contact.html">Check if I qualify</a></p>
+</div>
+</section>
+
+<section id="more">
+<div class="wrap">
+<h2>More than debt support</h2>
+<p>Enquire about vehicle finance and mobile contracts when you are ready.</p>
+<div class="cards">
+<div class="panel"><h3>Car finance</h3><p>Explore vehicle finance options and understand affordability before committing.</p><a href="contact.html">Make a car finance enquiry</a></div>
+<div class="panel"><h3>Phone contracts</h3><p>Compare available contract options and check what fits your budget before you sign.</p><a href="contact.html">Make a phone contract enquiry</a></div>
+</div>
+<div class="note">If you are under debt review, you generally cannot take on new credit. Ask your consultant what applies to you before applying.</div>
+</div>
+</section>
+
+<section id="benefits" style="background:var(--surface);border-block:1px solid var(--line)">
+<div class="wrap">
+<h2>What getting debt help can change</h2>
+<div class="benefits">
+<div><h3>Lower monthly pressure</h3><p>Repayments redesigned around what you can afford.</p></div>
+<div><h3>Asset protection</h3><p>Debt review may protect eligible assets, subject to legal requirements.</p></div>
+<div><h3>One plan</h3><p>Eligible repayments combined into a single monthly arrangement.</p></div>
+<div><h3>Less creditor contact</h3><p>Once a plan is in place, we liaise with creditors for you.</p></div>
+<div><h3>Clear direction</h3><p>Plain-language guidance on your options.</p></div>
+<div><h3>Nationwide</h3><p>Support for clients across South Africa.</p></div>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap two" style="align-items:center">
+<div><h2>Already a client?</h2><p>Contact client support for help with your debt solution. Phone and email, during business hours.</p></div>
+<div><a class="btn" href="#assess">Contact client support</a></div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<h2>Common questions</h2>
+<details><summary>What does the free assessment involve?</summary><p>A consultant reviews your income, expenses and debts, then explains which options, if any, suit you. There is no obligation to proceed.</p></details>
+<details><summary>What is the difference between mediation and debt review?</summary><p>Mediation is informal and covers unsecured debt. Debt review is formal under the National Credit Act and is confirmed by a court or the Tribunal.</p></details>
+<details><summary>Will this affect my credit record?</summary><p>Debt review is shown on your credit profile and you generally cannot take new credit while it lasts. Ask us how mediation differs.</p></details>
+<details><summary>Can I include my home loan or car finance?</summary><p>Not in mediation. Debt review may include them, subject to the process and legal requirements.</p></details>
+</div>
+</section>
+
+<section id="assess" style="background:var(--soft)">
+<div class="wrap">
+<h2>Request your free assessment</h2>
+<p>Tell us how to reach you. A consultant will call back during business hours.</p>
+<form id="lead" novalidate>
+<label>Full name<input type="text" name="name" autocomplete="name" required></label>
+<label>Phone number<input type="tel" name="phone" autocomplete="tel" required></label>
+<label>Email<input type="email" name="email" autocomplete="email"></label>
+<label>Which are you interested in?<select name="topic"><option>Not sure yet</option><option>Debt mediation</option><option>Debt review</option><option>Vehicle finance enquiry</option><option>Phone contract enquiry</option></select></label>
+<button class="btn" type="submit">Request free assessment</button>
+<div class="ok" id="ok" role="status">Thank you. Your request is recorded on this page only; connect the form to your CRM or email service to receive it.</div>
+</form>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="cols">
+<div><h3>Credit Rescue</h3><p>General information only; not financial advice. Suitability and outcomes depend on individual circumstances and creditor agreements.</p></div>
+<div><h3>Debt solutions</h3><a href="debt-mediation.html">Debt mediation</a><a href="debt-review.html">Debt review</a><a href="debt-review-removal.html">Debt review removal</a><a href="services.html">All services</a></div>
+<div><h3>Company</h3><a href="about.html">About us</a><a href="existing-clients.html">Existing clients</a><a href="faq.html">FAQ</a><a href="contact.html">Contact us</a><a href="privacy.html">Privacy notice</a></div>
+<div><h3>Get in touch</h3><p><a href="tel:0100158418">010 015 8418</a> / <a href="tel:0630121975">063 012 1975</a><br><a href="mailto:romelda.kemp@credit-rescue.co.za">romelda.kemp@credit-rescue.co.za</a><br>The Interchange, 22 Skeen Boulevard, Bedfordview, Germiston</p></div>
+</div><p style="margin-top:28px">© 2026 Credit Rescue. All rights reserved.</p></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
